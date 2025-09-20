@@ -36,17 +36,14 @@ The experiments focused on:
 - Mechanism called *poisoned reverse* prevents loops by advertising such routes back.  
 
 **Stable topology path (R2 → R4):**  
-$$
+
 R2 → R3 → R4
-$$
+
 
 **Failure case (R3 eth2 shut down):**  
 - Traceroute from R2 to R4 failed ~15s.  
 - R2 initially tried old path via R3.  
-- Updated route:  
-$$
-R2 → R1 → R4
-$$
+- Updated route:  R2 → R1 → R4
 - Metric increased from 2 → 3.  
 
 **Router failure (R3 removed):**  
@@ -78,9 +75,9 @@ $$
 - z1: 10  
 
 **Optimal path from bb1 → 10.0.2.1:**  
-$$
+
 bb1 → bb2 → bb3 → 10.0.2.1
-$$
+
 
 - Path avoided costly links (x1, y1), preferring multiple low-cost links.  
 - Total cost = 41 (minimum).  
