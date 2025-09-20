@@ -37,7 +37,7 @@ The experiments focused on:
 
 **Stable topology path (R2 → R4):**  
 $$
-R2 \rightarrow R3 \rightarrow R4
+R2 → R3 → R4
 $$
 
 **Failure case (R3 eth2 shut down):**  
@@ -45,7 +45,7 @@ $$
 - R2 initially tried old path via R3.  
 - Updated route:  
 $$
-R2 \rightarrow R1 \rightarrow R4
+R2 → R1 → R4
 $$
 - Metric increased from 2 → 3.  
 
@@ -79,7 +79,7 @@ $$
 
 **Optimal path from bb1 → 10.0.2.1:**  
 $$
-bb1 \rightarrow bb2 \rightarrow bb3 \rightarrow 10.0.2.1
+bb1 → bb2 → bb3 → 10.0.2.1
 $$
 
 - Path avoided costly links (x1, y1), preferring multiple low-cost links.  
